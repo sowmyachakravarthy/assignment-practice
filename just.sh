@@ -17,11 +17,25 @@
 # echo " Oh great, You live in $city"
 ###################################################################################3
 
-read -p "Enter a number : " number
+# read -p "Enter a number : " number
 
-if [ $((number % 2)) -eq 0 ]
+# if [ $((number % 2)) -eq 0 ]
+# then
+#     echo "The number $number you entered is even"
+# else   
+#     echo "The number $number you entered is odd"
+# fi
+
+##################################################################################
+
+read -p "Please enter a number : " number
+
+if [ $number -gt 0 ]
 then
-    echo "The number $number you entered is even"
-else   
-    echo "The number $number you entered is odd"
-fi
+    echo " The number is positive "
+elif [ $number -lt 0]    
+then
+    echo " The number is negative "
+else
+    echo " The number is zero "
+fi        
