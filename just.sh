@@ -57,11 +57,23 @@
 
 ##########################################################################################
 
-read -p " Please enter your age : " age
+# read -p " Please enter your age : " age
 
-if [ $age -ge 18 ]
-then 
-    echo " You are an adult "
+# if [ $age -ge 18 ]
+# then 
+#     echo " You are an adult "
+# else
+#     echo " You are not an adult "
+# fi        
+
+###########################################################################################
+
+read -p "Hey User, Please enter your password : " password
+secret='Sow123'
+
+if [ $password=$secret ]
+then
+    echo " Access granted "
 else
-    echo " You are not an adult "
-fi        
+    echo " Access denied "
+fi
