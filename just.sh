@@ -24,3 +24,4 @@ if
     echo "The number $number you entered is even"
 else   
     echo "The number $number you entered is odd"
+fi
