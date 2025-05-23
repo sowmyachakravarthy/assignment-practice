@@ -92,14 +92,14 @@
 
 ##############################################################################################
 
-read -p "Enter number one : " number1
-read -p "Enter number two : " number2
+read -p "Enter number one   : " number1
+read -p "Enter number two   : " number2
 read -p "Enter number three : " number3
 
-if [ $number1 -gt $number2 & $number3 ]
+if [[ $number1 -gt $number2 ] && [ $number1 -gt $number3 ]]
 then
     echo "Biggest number among all the three numbers is : $number1 " 
-elif [ $number2 -gt $number1 & $number3 ]
+elif [[ $number2 -gt $number1 ] && [ $number2 -gt $number3 ]]
     echo "Biggest number among all the three numbers is : $number2 "
 else
     echo "Biggest number among all the three numbers is : $number3 "
