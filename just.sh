@@ -28,14 +28,29 @@
 
 ##################################################################################
 
-read -p "Please enter a number : " number
+# read -p "Please enter a number : " number
 
-if [ $number -gt 0 ]
+# if [ $number -gt 0 ]
+# then
+#     echo " The number is positive "
+# elif [ $number -lt 0 ]    
+# then
+#     echo " The number is negative "
+# else
+#     echo " The number is zero " 
+# fi        
+
+#######################################################################################
+
+read -p " Enter number one : " number1
+read -p " Enter number two : " number2
+
+if [ $number1 -gt $number2 ]
 then
-    echo " The number is positive "
-elif [ $number -lt 0 ]    
+    echo " Number one is greater "
+elif [ $number1 -lt $number2 ]
 then
-    echo " The number is negative "
+    echo " Number two is greater "
 else
-    echo " The number is zero " 
-fi        
+    echo " Both are equal "
+fi         
