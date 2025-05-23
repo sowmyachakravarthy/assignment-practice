@@ -92,16 +92,36 @@
 
 ##############################################################################################
 
-read -p "Enter number one   : " number1
-read -p "Enter number two   : " number2
-read -p "Enter number three : " number3
+# read -p "Enter number one   : " number1
+# read -p "Enter number two   : " number2
+# read -p "Enter number three : " number3
 
-if [[ "$number1" -gt "$number2" && "$number1" -gt "$number3" ]]
+# if [[ "$number1" -gt "$number2" && "$number1" -gt "$number3" ]]
+# then
+#     echo "Biggest number among all the three numbers is : $number1 " 
+# elif [[ "$number2" -gt "$number1" && "$number2" -gt "$number3" ]]
+# then
+#     echo "Biggest number among all the three numbers is : $number2 "
+# else
+#     echo "Biggest number among all the three numbers is : $number3 "
+# fi
+
+#################################################################################################
+
+read -p "Please enter your marks for 100 : " marks
+
+if [ [ "$marks" -ge '90' && "$marks" -le '100' ]]
 then
-    echo "Biggest number among all the three numbers is : $number1 " 
-elif [[ "$number2" -gt "$number1" && "$number2" -gt "$number3" ]]
+    echo "GRADE A"
+elif [ [ "$marks" -ge '80' && "$marks" -le '89' ]]
 then
-    echo "Biggest number among all the three numbers is : $number2 "
+    echo "GRADE B"
+elif [ [ "$marks" -ge '70' && "$marks" -le '79' ]]
+then
+    echo "GRADE C"
+elif [ [ "$marks" -ge '60' && "$marks" -le '69' ]]
+then
+    echo "GRADE D"
 else
-    echo "Biggest number among all the three numbers is : $number3 "
+    echo "FAIL"
 fi
