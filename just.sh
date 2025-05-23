@@ -114,6 +114,9 @@ VALIDATE(){
     if [ "$marks" -gt 100 ]
     then
         echo "Please enter a valid mark number"
+    else
+        echo " Thanks for entering your mark, Here is your result"
+    fi
 }
 
 if [[ "$marks" -ge '90' && "$marks" -le '100' ]]
