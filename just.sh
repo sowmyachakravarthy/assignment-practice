@@ -69,9 +69,8 @@
 ###########################################################################################
 
 read -p "Hey User, Please enter your password : " password
-secret="Sow123"
 
-if [ $password -eq $secret ]
+if [ $password = "Sow123" ]
 then
     echo "Access granted"
 else
