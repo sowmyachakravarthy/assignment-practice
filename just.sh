@@ -68,11 +68,39 @@
 
 ###########################################################################################
 
-read -p "Hey User, Please enter your password : " password
+#  But with strings, always use double [[ ... ]] for safer comparison:
 
-if [ $password = "Sow123" ]
+# bash
+# Copy
+# Edit
+# if [[ "$password" == "Sow123" ]]
+# Also consider using read -s to hide password while typing:
+
+# bash
+# Copy
+# Edit
+# read -s -p "Enter password: " password
+#----------------------------------------------------------------------------
+# read -p "Hey User, Please enter your password : " password
+
+# if [ $password = "Sow123" ]
+# then
+#     echo "Access granted"
+# else
+#     echo "Access denied"
+# fi
+
+##############################################################################################
+
+read -p "Enter number one : " number1
+read -p "Enter number two : " number2
+read -p "Enter number three : " number3
+
+if [ $number1 -gt $number2 & $number3 ]
 then
-    echo "Access granted"
+    echo "Biggest number among all the three numbers is : $number1 " 
+elif [ $number2 -gt $number1 & $number3 ]
+    echo "Biggest number among all the three numbers is : $number2 "
 else
-    echo "Access denied"
+    echo "Biggest number among all the three numbers is : $number3 "
 fi
