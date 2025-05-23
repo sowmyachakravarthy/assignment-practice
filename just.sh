@@ -120,21 +120,18 @@ VALIDATE(){
 }
 
 if [[ "$marks" -ge '90' && "$marks" -le '100' ]]
-    VALIDATE $?
 then
     echo "GRADE A"
-elif [[ "$marks" -ge '80' && "$marks" -le '89' ]]
-    VALIDATE $?
+elif [[ "$marks" -ge '80' && "$marks" -le '89' ]]    
 then
     echo "GRADE B"
-elif [[ "$marks" -ge 70 && "$marks" -le 79 ]]
-    VALIDATE $?
+elif [[ "$marks" -ge 70 && "$marks" -le 79 ]] 
 then
     echo "GRADE C"
 elif [[ "$marks" -ge 60 && "$marks" -le 69 ]]
-    VALIDATE $?
 then
     echo "GRADE D"
 else
+    VALIDATE $?
     echo "FAIL"
 fi
