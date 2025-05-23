@@ -110,16 +110,26 @@
 
 read -p "Please enter your marks for 100 : " marks
 
+VALIDATE(){
+    if [ "$marks" -gt 100 ]
+    then
+        echo "Please enter a valid mark number"
+}
+
 if [[ "$marks" -ge '90' && "$marks" -le '100' ]]
+    VALIDATE $?
 then
     echo "GRADE A"
 elif [[ "$marks" -ge '80' && "$marks" -le '89' ]]
+    VALIDATE $?
 then
     echo "GRADE B"
 elif [[ "$marks" -ge 70 && "$marks" -le 79 ]]
+    VALIDATE $?
 then
     echo "GRADE C"
 elif [[ "$marks" -ge 60 && "$marks" -le 69 ]]
+    VALIDATE $?
 then
     echo "GRADE D"
 else
