@@ -7,5 +7,7 @@
 number1= '30'
 number2= '50'
 
-echo " Sum of 2 numbers is $number1 + $number2 "
+total="$number1 + $number2"
+
+echo " Sum of 2 numbers is : ($total) "
 
