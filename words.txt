@@ -1,0 +1,1 @@
+While there is no single route that every organization can take, there are DevOps best practices that you can follow to implement this philosophy successfully in an organization. To help you start in this journey of implementing DevOps, we did the leg work for you. We asked engineers to share their lessons from switching to a DevOps approach and here is what they swear by
