@@ -1,5 +1,5 @@
 #!/bin/bash
 
-read $words.txt
+read $words
 
-echo $words.txt | tr ' ' '\n' | sort | uniq -c
+echo $words | tr ' ' '\n' | sort | uniq -c
