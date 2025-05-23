@@ -42,15 +42,26 @@
 
 #######################################################################################
 
-read -p " Enter number one : " number1
-read -p " Enter number two : " number2
+# read -p " Enter number one : " number1
+# read -p " Enter number two : " number2
 
-if [ $number1 -gt $number2 ]
-then
-    echo " Number one is greater "
-elif [ $number1 -lt $number2 ]
-then
-    echo " Number two is greater "
+# if [ $number1 -gt $number2 ]
+# then
+#     echo " Number one is greater "
+# elif [ $number1 -lt $number2 ]
+# then
+#     echo " Number two is greater "
+# else
+#     echo " Both are equal "
+# fi         
+
+##########################################################################################
+
+read -p " Please enter your age : " age
+
+if [ $age -eq -gt 18 ]
+then 
+    echo " You are an adult "
 else
-    echo " Both are equal "
-fi         
+    echo " You are not an adult "
+fi        
