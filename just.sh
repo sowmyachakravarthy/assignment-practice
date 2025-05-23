@@ -69,11 +69,11 @@
 ###########################################################################################
 
 read -p "Hey User, Please enter your password : " password
-secret='Sow123'
+secret="Sow123"
 
 if [ $password=$secret ]
 then
-    echo " Access granted "
+    echo "Access granted"
 else
-    echo " Access denied "
+    echo "Access denied"
 fi
