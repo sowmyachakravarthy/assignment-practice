@@ -9,5 +9,5 @@ number2="50"
 
 total=$(($number1 + $number2))
 
-echo " Sum of 2 numbers is : ($total) "
+echo " Sum of 2 numbers is : $total "
 
