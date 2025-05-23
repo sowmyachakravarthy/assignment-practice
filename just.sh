@@ -110,16 +110,16 @@
 
 read -p "Please enter your marks for 100 : " marks
 
-if [ [ "$marks" -ge "90" && "$marks" -le "100" ]]
+if [[ "$marks" -ge 90 && "$marks" -le 100 ]]
 then
     echo "GRADE A"
-elif [ [ "$marks" -ge "80" && "$marks" -le "89" ]]
+elif [[ "$marks" -ge 80 && "$marks" -le 89 ]]
 then
     echo "GRADE B"
-elif [ [ "$marks" -ge "70" && "$marks" -le "79" ]]
+elif [[ "$marks" -ge 70 && "$marks" -le 79 ]]
 then
     echo "GRADE C"
-elif [ [ "$marks" -ge "60" && "$marks" -le "69" ]]
+elif [[ "$marks" -ge 60 && "$marks" -le 69 ]]
 then
     echo "GRADE D"
 else
