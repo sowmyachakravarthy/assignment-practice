@@ -19,7 +19,7 @@
 
 read -p "Enter a number : " number
 
-if [ $number/2 ]
+if [ ($number/2) ]
 then
     echo "The number $number you entered is even"
 else   
