@@ -2,4 +2,4 @@
 
 read -p 'Enter the name : ' name
 
-echo "The name you entered is : $name "
+echo 'The name you entered is : $name '
