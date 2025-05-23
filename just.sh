@@ -4,10 +4,10 @@
 
 # echo "The name you entered is : $name "
 
-read -p "enter number1 : $1"
-read -p "enter number2 : $2"
+read -p "enter number1 : " number1
+read -p "enter number2 : " number2
 
-total=$(($1 + $2))
+total=$(($number1 + $number2))
 
 echo " Sum of 2 numbers is : $total "
 
