@@ -18,9 +18,9 @@
 ###################################################################################3
 
 read -p "Enter a number : " number
-num=$(($number/2))
 
-if
+if [ $number/2 ]
+then
     echo "The number $number you entered is even"
 else   
     echo "The number $number you entered is odd"
