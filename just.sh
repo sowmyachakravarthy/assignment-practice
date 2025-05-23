@@ -59,7 +59,7 @@
 
 read -p " Please enter your age : " age
 
-if [ $age -eq -gt 18 ]
+if [ $age -ge 18 ]
 then 
     echo " You are an adult "
 else
