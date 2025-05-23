@@ -114,23 +114,24 @@ VALIDATE(){
     if [ "$marks" -gt 100 ]
     then
         echo "Please enter a valid mark number"
-    else
-        echo " Thanks for entering your mark, Here is your result"
+        exit 1 # Exit the script if invalid
     fi
 }
+VALIDATE
+    echo " Thanks for entering your mark, Here is your result"
 
-if [[ "$marks" -ge '90' && "$marks" -le '100' ]]VALIDATE $?
+if [[ "$marks" -ge '90' && "$marks" -le '100' ]]
 then
     echo "GRADE A"
-elif [[ "$marks" -ge '80' && "$marks" -le '89' ]]VALIDATE $? 
+elif [[ "$marks" -ge '80' && "$marks" -le '89' ]] 
 then
     echo "GRADE B"
-elif [[ "$marks" -ge 70 && "$marks" -le 79 ]]VALIDATE $?
+elif [[ "$marks" -ge 70 && "$marks" -le 79 ]]
 then
     echo "GRADE C"
-elif [[ "$marks" -ge 60 && "$marks" -le 69 ]]VALIDATE $?
+elif [[ "$marks" -ge 60 && "$marks" -le 69 ]]
 then
     echo "GRADE D"
-else VALIDATE $?
+else 
     echo "FAIL"
 fi
