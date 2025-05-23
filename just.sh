@@ -4,8 +4,8 @@
 
 # echo "The name you entered is : $name "
 
-number1="30"
-number2="50"
+number1=read -p "enter number1 : $1"
+number2=read -p "enter number2 : $1"
 
 total=$(($number1 + $number2))
 
